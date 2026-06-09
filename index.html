@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallpaper Lab | 高清电脑壁纸</title>
+    <meta
+      name="description"
+      content="Wallpaper Lab 提供写实、高清、适合桌面图标区的 16:9 电脑壁纸。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="Wallpaper Lab 首页">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Wallpaper Lab</span>
+      </a>
+      <nav class="nav-links" aria-label="页面导航">
+        <a href="#gallery">图库</a>
+        <a href="#curation">标准</a>
+        <a href="#sets">专题</a>
+      </nav>
+      <a class="header-action" href="#gallery">浏览壁纸</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="精选壁纸">
+        <img
+          class="hero-image"
+          id="heroImage"
+          src="output/imagegen/alpine-observatory-hero-wallpaper.png"
+          alt="蓝调雪山与月光天空的写实高清壁纸"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Photorealistic desktop wallpapers</p>
+          <h1>Wallpaper Lab</h1>
+          <p class="hero-copy">
+            面向长期桌面使用的高清壁纸站。左侧留给图标，视觉焦点放在中右区域，色彩克制、细节真实。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#gallery">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 5v14m0 0 6-6m-6 6-6-6" />
+              </svg>
+              查看图库
+            </a>
+            <button class="ghost-action" type="button" id="randomHero">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m16 3 5 5-5 5M3 8h18M8 21l-5-5 5-5m13 5H3" />
+              </svg>
+              换一张首屏
+            </button>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="当前精选">
+          <span class="panel-kicker">Featured</span>
+          <strong id="heroTitle">Alpine Observatory</strong>
+          <span id="heroMeta">16:9 / 写实摄影 / 左侧留白</span>
+        </div>
+      </section>
+
+      <section class="quick-stats" aria-label="壁纸特性">
+        <div>
+          <span>16:9</span>
+          <p>优先横向桌面构图</p>
+        </div>
+        <div>
+          <span>Clean Left</span>
+          <p>左侧三分之一低杂乱</p>
+        </div>
+        <div>
+          <span>No Text</span>
+          <p>无水印、签名和多余标识</p>
+        </div>
+      </section>
+
+      <section class="section-shell" id="gallery">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Curated gallery</p>
+            <h2>精选壁纸</h2>
+          </div>
+          <div class="filter-bar" role="list" aria-label="壁纸筛选">
+            <button class="filter-button active" type="button" data-filter="all">全部</button>
+            <button class="filter-button" type="button" data-filter="space">深空</button>
+            <button class="filter-button" type="button" data-filter="nature">自然</button>
+            <button class="filter-button" type="button" data-filter="cinematic">宏大尺度</button>
+            <button class="filter-button" type="button" data-filter="calm">护眼</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="editorial-band" id="curation">
+        <div class="editorial-copy">
+          <p class="eyebrow">Curation rules</p>
+          <h2>为桌面而不是海报设计</h2>
+          <p>
+            每张图都以可用性作为第一约束：左侧降低对比和复杂度，中右区域承载主体细节，避免刺眼高光与过度饱和。
+          </p>
+        </div>
+        <div class="rule-grid" aria-label="筛选标准">
+          <article>
+            <span>01</span>
+            <h3>真实质感</h3>
+            <p>偏向摄影级材质、自然光影和可信的大气透视。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>桌面留白</h3>
+            <p>左侧图标区保持低杂乱，长时间使用不压迫。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>克制色彩</h3>
+            <p>保留主题氛围，同时避免荧光色、伪 HDR 和塑料感。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="sets">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Wallpaper sets</p>
+            <h2>专题方向</h2>
+          </div>
+        </div>
+        <div class="set-list">
+          <article class="set-item">
+            <img src="output/imagegen/black-hole-voyage-wallpaper.png" alt="黑洞深空壁纸缩略图" />
+            <div>
+              <h3>深空尺度</h3>
+              <p>黑洞、月球、太阳等高反差题材，控制亮部面积与左侧图标区。</p>
+            </div>
+          </article>
+          <article class="set-item">
+            <img src="output/imagegen/green-grassland-eye-care-wallpaper.png" alt="绿色草地护眼壁纸缩略图" />
+            <div>
+              <h3>低饱和护眼</h3>
+              <p>自然绿色与柔和光线，适合作为日常工作桌面。</p>
+            </div>
+          </article>
+          <article class="set-item">
+            <img src="output/imagegen/everest-summit-clean-left-wallpaper.png" alt="珠峰雪山壁纸缩略图" />
+            <div>
+              <h3>山野纪实</h3>
+              <p>雪线、岩层和云雾细节集中在视觉焦点区，保留空间感。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Wallpaper Lab</span>
+      <a href="#top">回到顶部</a>
+    </footer>
+
+    <dialog class="preview-dialog" id="previewDialog" aria-label="壁纸预览">
+      <div class="preview-topbar">
+        <div>
+          <strong id="previewTitle"></strong>
+          <span id="previewMeta"></span>
+        </div>
+        <button class="icon-button" type="button" id="closePreview" aria-label="关闭预览">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <img
+        id="previewImage"
+        src="output/imagegen/alpine-observatory-hero-wallpaper.png"
+        alt="Alpine Observatory 高清电脑壁纸预览"
+      />
+      <div class="preview-actions">
+        <a class="primary-action" id="downloadPreview" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" />
+          </svg>
+          下载原图
+        </a>
+        <button class="ghost-action" type="button" id="setHeroFromPreview">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v12H4zM8 22h8M12 18v4" />
+          </svg>
+          设为首屏
+        </button>
+      </div>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
